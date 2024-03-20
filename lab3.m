@@ -4,11 +4,10 @@ clear all
 
 inputStr = 'abcdefghiklm';
 
-triadLength = 3; % Длина одной триады
-numTriads = length(inputStr) / triadLength; % Общее количество триад
-triadIndex = repmat([true false], 1, numTriads/2); % Логический вектор для триад
+triadLength = 3;
+numTriads = length(inputStr) / triadLength;
+triadIndex = repmat([true false], 1, numTriads/2);
     
-% Выбираем элементы, соответствующие каждой первой триаде из двух
 outputStr = inputStr(repmat(triadIndex, triadLength, 1));
 
 disp(outputStr)
