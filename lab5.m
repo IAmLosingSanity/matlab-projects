@@ -79,3 +79,11 @@ f_id = fopen(f_name, 'w+');
 fwrite(f_id, P, 'double');
 fwrite(f_id, x(2:end), 'double');
 fclose(f_id);
+%%
+clear all;
+
+x = [0.1, 0.2, 0.2, 0.3, 0.3, 0.3, 0.4, 0.4, 0.4, 0.4];
+
+f = unifpdf(x);
+
+figure; plot(x, f)
