@@ -1,5 +1,4 @@
-% Create a SpacePort object with 5 docks
-% Создание объекта SpacePort с 5 доками
+%% Создание объекта SpacePort с 5 доками
 mySpacePort = lab6(5);
 
 % Печать текущего статуса доков
